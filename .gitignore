@@ -1,0 +1,5 @@
+keys.json
+*.tfstate
+*.tfstate.backup
+.crash
+.terraform/
