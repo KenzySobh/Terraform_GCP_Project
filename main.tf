@@ -8,9 +8,9 @@ terraform {
 }
 
 provider "google" {
-  project = "stunning-ruler-473613-b9"
+  project = "terraform-test-project-473708 "
   region = "us-central1"
-  credentials = "keys.json"
+  credentials = "newKeys.json"
 }
 
 module "project" {
