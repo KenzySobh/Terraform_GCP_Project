@@ -14,7 +14,7 @@ This approach is modular, reusable, and easy to extend for new resources or conf
 
 ## 🏗 Project Architecture  
 
-
+```text
 auto-gcp/
 │
 ├── main.tf
