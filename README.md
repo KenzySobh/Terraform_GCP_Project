@@ -44,7 +44,7 @@ auto-gcp/
 │   └── example-project.yaml
 │
 └── run.sh
-
+```
 
 ---
 
