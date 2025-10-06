@@ -209,4 +209,3 @@ By completing AutoGCP, you’ve built a *mini Infrastructure-as-Code system* tha
 - Demonstrates DevOps skills with Terraform, GCP, and automation scripting.  
 
 
-Footer
