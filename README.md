@@ -101,7 +101,7 @@ Each module contains:
 | *example-project.yaml* | Example YAML file containing your GCP project configuration. |
 
 #### Example:
-yaml
+```yaml
 project_id: "terraform-test-project-473708"
 organization_id: "123456789012"
 billing_account: "01949F-69D66D-E7B8F6"
@@ -112,12 +112,12 @@ labels:
 apis:
   - compute.googleapis.com
   - iam.googleapis.com
-
+```
 ---
 ### 🧠 *run.sh*
 A bash script that automates the entire deployment process — authentication, running the deploy script, and applying Terraform.
 #### Example:
-bash
+``` bash
 #!/bin/bash
 set -e
 
@@ -126,13 +126,13 @@ gcloud auth application-default login
 cd scripts
 python3 deploy.py "../configs/example-project.yaml"
 echo "✅ Deployment completed successfully!"
-
+```
 
 Run it with:
-bash
+```bash
 chmod +x run.sh
 ./run.sh
-
+```
 
 ---
 
@@ -143,15 +143,17 @@ chmod +x run.sh
 
 2. *Authenticate to GCP*  
    Run:
-   bash
+
+   ```bash
    gcloud auth application-default login
-   
+   ```
 
 3. *Deploy Project*  
    Use:
-   bash
+   ```bash
    ./run.sh
-   
+   ```
+
    This will:
    - Parse the YAML file  
    - Create terraform.tfvars.json  
@@ -163,10 +165,10 @@ chmod +x run.sh
 
 5. *Destroy Infrastructure (Optional)*  
    To clean up resources:
-   bash
+   ``` bash
    cd scripts
    python3 destroy.py
-   
+   ```
 
 ---
 
